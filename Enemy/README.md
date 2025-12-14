@@ -1,5 +1,5 @@
 -----
-Enemy/Enemy.CS
+Enemy.CS
 
 The Enemy class is a base MonoBehaviour used to define enemy behavior in the game. Attaching this script to a GameObject turns it into a fully functional enemy that can move along a path, take damage, and reward the player when defeated.
 
@@ -52,4 +52,9 @@ Adjusting Inspector values
 Swapping sprites and animations
 
 Overriding or extending movement, damage, or death behavior in derived classes
+
+-----
+
+The SquareEnemy and TriangleEnemy files inherit the base Enemy file, allowing for customization of each enemy type
+
 -----
