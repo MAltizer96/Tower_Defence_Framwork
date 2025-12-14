@@ -91,4 +91,48 @@ SpeedUpgradeCost / DamageUpgradeCost → Cost to upgrade turret.
 
 ----
 
+
+Bullet Script
+
+The Bullet script defines the behavior of a projectile fired by turrets. It handles movement towards a target, applying damage, and displaying hit effects upon impact.
+
+Features
+
+Targeted Movement
+Moves the bullet towards a specified target at a defined speed.
+
+Hit Detection & Damage
+Calls HitTargetLogic() when hitting the target to apply damage (can be extended to interact with an Enemy script).
+
+Particle Effects
+Plays a particle effect on impact to provide visual feedback.
+
+Automatic Destruction
+Destroys the bullet after hitting a target or if the target no longer exists.
+
+Dependencies
+
+Unity (tested with Unity 2021+)
+
+Requires a SpriteRenderer component for the bullet visuals.
+
+Requires a ParticleSystem component on the same GameObject for the hit effect.
+
+Usage
+
+Attach the Bullet script to a bullet prefab.
+
+Ensure the prefab has:
+
+SpriteRenderer → For bullet visuals.
+
+Collider2D → For detecting collisions.
+
+ParticleSystem → For hit effect.
+
+Call the Fire() method to launch the bullet:
+
+
+----
+
 The Rocket_Turrent and the Basic_Turrent inherit the Turrent class, to allow for customization of each new turrent created.
