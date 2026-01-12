@@ -21,9 +21,9 @@ Scaling difficulty over time
 
 Key Components:
 
-WaveManager – Controls wave flow, spawning, and UI updates
+WaveManager: Controls wave flow, spawning, and UI updates
 
-Wave – Defines enemy composition per wave
+Wave: Defines enemy composition per wave
 
 EnemyCount – Pairs enemy prefabs with spawn counts
 
@@ -44,7 +44,7 @@ Key Components:
 
 Enemy – Base class for all enemy types
 
-Enemies are designed to be data-driven, allowing new enemy types to be created by adjusting stats or extending the base class.
+Enemies are designed to be data driven, allowing new enemy types to be created by adjusting stats or extending the base class.
 
 3. Turret System
 
@@ -77,9 +77,7 @@ Playing hit effects and cleaning up objects
 
 Key Components:
 
-Bullet – Handles projectile movement, impact logic, and effects
-
-Bullets are target-driven, allowing for homing behavior and flexible damage handling.
+Bullet: Handles projectile movement, impact logic, and effects
 
 5. Upgrade System
 
